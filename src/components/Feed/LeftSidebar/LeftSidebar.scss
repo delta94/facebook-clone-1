@@ -1,0 +1,37 @@
+@import "../../../styles/Mixins.scss";
+
+.left-sidebar {
+  span {
+    @include overflow-handler;
+    max-width: 255px;
+  }
+
+  .icon {
+    margin-right: 23px;
+
+    &.icon-0,
+    &.icon-4 {
+      color: #7209b7;
+    }
+
+    &.icon-1 {
+      color: #f48c06;
+    }
+
+    &.icon-2,
+    &.icon-3,
+    &.icon-5,
+    &.icon-6,
+    &.icon-7 {
+      color: #2e81f4;
+    }
+
+    &.icon-8 {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      padding: 3px;
+      margin-left: -3px;
+      margin-right: 20px;
+    }
+  }
+}

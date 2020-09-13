@@ -1,0 +1,49 @@
+.stories {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  .story {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 18%;
+    max-width: 133px;
+    height: 200px;
+    transition: 0.3s;
+    background-position: 30% 0;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &.story-0 {
+      background-image: url("./story-images/story0.jpeg");
+    }
+
+    &.story-1 {
+      background-image: url("./story-images/story1.jpg");
+    }
+
+    &.story-2 {
+      background-image: url("./story-images/story2.png");
+    }
+
+    &.story-3 {
+      background-image: url("./story-images/story3.jpg");
+    }
+
+    &.story-4 {
+      background-image: url("./story-images/story4.png");
+    }
+
+    .avatar {
+      top: 10px;
+      left: 10px;
+      border: 4px solid #2e81f4;
+    }
+  }
+}

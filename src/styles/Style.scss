@@ -1,0 +1,29 @@
+body {
+  background: #f1f2f5;
+
+  h1 {
+    text-align: center;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #2e81f4;
+  }
+
+  span {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    font-family: system-ui !important;
+  }
+
+  .floating-button {
+    background: white;
+    position: fixed;
+    top: 90vh;
+    left: 94vw;
+  }
+}

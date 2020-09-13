@@ -1,0 +1,76 @@
+@import "../../../../styles/Mixins.scss";
+
+.post {
+  background: white;
+  border-radius: 10px;
+  margin: 0 0 30px;
+
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 10px;
+
+    .left-side {
+      display: flex;
+
+      .user-picture {
+        cursor: pointer;
+        margin-right: 15px;
+
+        &:hover {
+          filter: brightness(90%);
+          transition: all 0.3s ease;
+        }
+      }
+
+      a {
+        cursor: pointer;
+        color: black;
+        display: inline-block;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 0.95rem;
+        max-width: 265px;
+        @include overflow-handler;
+      }
+
+      small {
+        color: gray;
+        display: block;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .middle-section {
+    margin: 10px 0 20px;
+    padding: 10px 20px;
+
+    p {
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+    padding-bottom: 5px;
+
+    div {
+      color: gray;
+      width: fit-content;
+
+      span {
+        margin: 0 0 0 15px;
+      }
+
+      &.avatar {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}

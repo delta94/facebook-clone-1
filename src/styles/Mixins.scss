@@ -1,0 +1,11 @@
+@mixin overflow-handler {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin regular-span {
+  font-size: 1rem !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 400 !important;
+}

@@ -1,0 +1,104 @@
+@import "../../styles/Mixins.scss";
+
+.navbar-wrapper {
+  .navbar {
+    padding-top: 3px;
+
+    .grid-left {
+      padding-bottom: 5px;
+
+      img {
+        margin-right: 7px;
+        cursor: pointer;
+      }
+
+      .search-wrapper {
+        display: flex;
+        align-items: center;
+        position: "relative";
+        border-radius: 30px;
+        padding: 10px;
+        background-color: #eff2f5;
+        margin-left: 10px;
+
+        .search-icon {
+          padding: 0 20px;
+          position: absolute;
+          display: flex;
+        }
+
+        .input-base {
+          padding-left: 50px;
+        }
+      }
+    }
+
+    .grid-middle {
+      align-items: flex-end;
+
+      .icons-grid {
+        justify-content: center;
+
+        .icon-wrapper {
+          margin-top: 5px;
+          padding-bottom: 7px;
+          color: gray;
+
+          div {
+            justify-content: center;
+          }
+
+          &.active {
+            border-bottom: 4px solid #2e81f4;
+            color: #2e81f4;
+          }
+        }
+      }
+    }
+
+    .grid-right {
+      justify-content: flex-end;
+
+      .user-details {
+        margin-right: 10px;
+        padding: 0 10px 0 0;
+        border-radius: 20px;
+        width: fit-content;
+        background: white;
+
+        span {
+          @include overflow-handler;
+          max-width: 150px;
+        }
+      }
+
+      .icons-grid {
+        display: flex;
+        gap: 10px;
+
+        .icon-wrapper {
+          cursor: pointer;
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.05);
+          color: black;
+        }
+      }
+    }
+
+    .grid-left,
+    .grid-middle,
+    .grid-right {
+      display: flex;
+
+      &:not(.grid-middle) {
+        align-items: center;
+      }
+
+      .icon-wrapper {
+        &:hover {
+          color: #2e81f4;
+        }
+      }
+    }
+  }
+}

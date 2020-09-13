@@ -1,0 +1,7 @@
+node_modules
+build
+debug.log
+firebase.tsx
+firebase.json
+.firebaserc
+.firebase

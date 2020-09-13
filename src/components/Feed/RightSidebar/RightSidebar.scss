@@ -1,0 +1,46 @@
+@import "../../../styles/Mixins.scss";
+
+.right-sidebar {
+  position: fixed !important;
+  right: 0;
+  width: 25%;
+  height: 100vh;
+  overflow: scroll;
+  direction: rtl;
+
+  > * {
+    direction: ltr;
+  }
+
+  div {
+    &.last {
+      padding-bottom: 100px;
+    }
+  }
+
+  li {
+    span {
+      @include regular-span;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    opacity: 0;
+    width: 10px;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar {
+      opacity: 1;
+      transition: 0.3s;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: lightgray;
+    }
+  }
+
+  @media screen and (min-width: 2009px) {
+    width: 16.666667%;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../../../styles/Mixins.scss";
+
+.post-creator {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 30px auto;
+
+  .top-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    form {
+      flex: 1;
+
+      .input-wrapper {
+        border-radius: 30px;
+        padding: 5px 20px;
+        background-color: #eff2f5;
+        margin-left: 10px;
+
+        .input-base {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+
+    div {
+      width: fit-content;
+
+      .icon-0 {
+        color: #ef233c;
+      }
+
+      .icon-1 {
+        color: #43aa8b;
+      }
+
+      .icon-2 {
+        color: #fcbf49;
+      }
+
+      span {
+        margin: 0 0 0 15px;
+        @include regular-span;
+      }
+    }
+  }
+}
